@@ -26,7 +26,7 @@ The requirements.txt file provides the environment requirements.
 ## Data Availability
 - The BCIC-IV-2a dataset can be downloaded in the following link: https://www.bbci.de/competition/iv/.
 - The BCIC-IV-2b dataset can be downloaded in the following link: https://www.bbci.de/competition/iv/.
-- The PhysioNet dataset can be downloaded in the following link: https://www.physionet.org/content/eegmmidb/1.0.0/
+- The PhysioNet dataset can be downloaded in the following link:https://www.physionet.org/content/eegmmidb/1.0.0/
 ## Implementations of ShallowNet, EEGNet, FBCNet, EEG-conformer, ATCNet, TransNet, MSVTNet, DMSANet and SST-DPN
 - ShallowNet is provided at https://github.com/robintibor/braindecode/
 - EEGNet is provided at https://github.com/vlawhern/arl-eegmodels

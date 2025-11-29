@@ -3,7 +3,7 @@ This repository contains the code for RUNet implemented with PyTorch.
 More details in paper: RUNet: A Zero-Calibration Framework for Cross-Domain EEG Decoding via Riemannian and Unsupervised Representation Learning
 ## Repository Structure
 - `compare_model/`: Comparative models from literature
-- {main.py}: Main training pipeline (pretraining + fine-tuning)
+- {main.py}: Main training pipeline (Pre-Training + Retrainin)
 - {model.py}: Base model architecture with MSCM module
 - { load_data.py}: Data loading and augmentation utilities
 - { NTXentLoss.py}: Contrastive loss for pretraining
@@ -13,8 +13,8 @@ More details in paper: RUNet: A Zero-Calibration Framework for Cross-Domain EEG 
 ## Hyperparameters
 | Stage         | Batch Size | Learning Rate | Epochs | Temperature (τ) |
 |---------------|------------|---------------|--------|-----------------|
-| Pretraining   | 64         | 0.001         | 20     | 0.5             |
-| Fine-tuning   | 32         | 0.0009        | 100/30 | -               |
+| Pre-Training   | 64         | 0.001         | 20     | 0.5             |
+| Retrainin   | 32         | 0.0009        | 100/30 | -               |
 
 - Temporal convolution kernels: 15 (KT1), 55 (KT2), 75 (KT3)
 - Spatial convolution kernels (KE): 3 (for most datasets), 1 (for BCIC-IV-2b)

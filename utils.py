@@ -252,7 +252,7 @@ class PCOM(nn.Module):
         self.alpha1 = nn.Parameter(torch.tensor(0.5))
         self.alpha2 = nn.Parameter(torch.tensor(0.5))
         self.alpha3 = nn.Parameter(torch.tensor(0.5))
-        self.fuse_weights = nn.Parameter(torch.tensor([0.5, 0.25, 0.25]))  # Control the proportion of the fusion of the three branches
+        self.fuse_weights = nn.Parameter(torch.tensor([1.0, 1.0, 1.0]))  # Control the proportion of the fusion of the three branches
 
 
         self.PE = PositionalEmbedding(dim)
@@ -474,4 +474,5 @@ class Vec(nn.Module):
     def forward(self, input):
         output = input[..., self.mask]
         return output
+
 
